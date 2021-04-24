@@ -180,3 +180,31 @@ data.push({
         change: ethers.BigNumber.from('65754747679461616495'),
     },
 })
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+        farm: ['https://mdex.com/'],
+        hash: [
+            '0x7e2ec4db68d96828556a4fe2c95078f27b25a9defd5752588d1d419dea346005',
+        ],
+        date: '2021-04-24',
+        description: 'harvest from mdex',
+        change: ethers.BigNumber.from('166633980243537790'),
+    },
+})
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
+        farm: ['https://bsc.acoconut.fi/'],
+        hash: [
+            '0xc61b97db647e656994b8de35ac0c839495ca98f1bb6e42b6e7b088a4e450cb58',
+        ],
+        date: '2021-04-24',
+        description: 'harvest from acoconut',
+        change: ethers.BigNumber.from('256482722387570'),
+    },
+})
