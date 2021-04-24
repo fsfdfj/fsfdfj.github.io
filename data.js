@@ -143,3 +143,40 @@ data.push({
         change: ethers.BigNumber.from('0'),
     },
 })
+
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+        farm: ['https://pancakebunny.finance/'],
+        hash: [
+            '0x2cc06abce5bb81c50eaac061000d96f1b4cc4a461e486e0d45423d8ec81d8517',
+            '0x65ecb1007713b744394c1773e33bd27cb16ebd32756f5d1c6a9d3fba0f465ac3',
+            '0x4f7ff095f5f5ec27c887c4cf92769ab7ea420d7f0ca8a0a0dbe54ecbccee25b7',
+            '0x397602059d5fa3dae77170d889311c8ef5244f7b8c921ce285eaa2ff7c20d09b',
+            '0x1478387bd51c304b291dac5814c68ed6c46af321afc29f323754efae4bdfd65a',
+        ],
+        date: '2021-04-24',
+        description: 'harvest from bunny',
+        change: ethers.BigNumber.from('84393253261318503951'),
+    },
+})
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0x55d398326f99059fF775485246999027B3197955',
+        farm: ['https://pancakebunny.finance/'],
+        hash: [
+            '0x2cc06abce5bb81c50eaac061000d96f1b4cc4a461e486e0d45423d8ec81d8517',
+            '0x65ecb1007713b744394c1773e33bd27cb16ebd32756f5d1c6a9d3fba0f465ac3',
+            '0x4f7ff095f5f5ec27c887c4cf92769ab7ea420d7f0ca8a0a0dbe54ecbccee25b7',
+            '0x397602059d5fa3dae77170d889311c8ef5244f7b8c921ce285eaa2ff7c20d09b',
+            '0x1478387bd51c304b291dac5814c68ed6c46af321afc29f323754efae4bdfd65a',
+        ],
+        date: '2021-04-24',
+        description: 'harvest from bunny',
+        change: ethers.BigNumber.from('65754747679461616495'),
+    },
+})
