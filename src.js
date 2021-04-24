@@ -80,7 +80,7 @@ switch (search.get('cmd')) {
                 th.innerText = item;
             });
             for (let k in data) {
-                const item = data[k];
+                const item = data[data.length - 1 - k];
                 if (item.type != 'earn') {
                     continue
                 }
