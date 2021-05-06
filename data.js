@@ -208,3 +208,38 @@ data.push({
         change: ethers.BigNumber.from('256482722387570'),
     },
 })
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+        farm: ['https://mdex.com/'],
+        hash: [
+            '0x9cd38bfc8fbcab2ea8dfddc52da924a668d8e2e8aceb8de4b3dcc453082046f8',
+            '0x1ebf2b9347ead85fdd0111becd515af7c615eb4233b3fe6a7a9cbc4e8b7ea48f',
+            '0xdaf67a763f7540b475c45d7025743ddda50bde2cf24185bcb5b832d53648ae4b',
+        ],
+        date: '2021-05-06',
+        description: 'harvest from mdex',
+        change: ethers.BigNumber.from('30009830283861335'),
+    },
+})
+
+data.push({
+    type: 'earn',
+    value: {
+        token: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
+        farm: ['https://solo.top/'],
+        hash: [
+            '0x9ff6b999b40ee5561e4b5632c9226b0f2654f969058051eea4fd0073d6e7333e',
+            '0x4bac95511d5bd47b83055d98acc35e13122e1d66e4d800c0f2446e8eab3072c9',
+            '0xd2b36b23e97932703000b34bed9d134a967c73c355a62ee913941cb5445bf7d3',
+            '0x43a964cf5aef439607e8ca649b0a366e246e5da83fb4b356988dd8881b399c3b',
+            '0xc94eee61164677a4742b17870d40c815b2a3da31e7cdc9b12c7e862a8ab6b977',
+            '0xb3d8e3dae361a33896526f5990b3b382aa941e105278cb9e31e6c49539b9429b',
+        ],
+        date: '2021-05-06',
+        description: 'move from acoconut to solo',
+        change: ethers.BigNumber.from('6262368418362145'),
+    },
+})
