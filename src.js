@@ -229,7 +229,7 @@ switch (search.get('cmd')) {
                     td.appendChild(code);
                     const val = index.interest[k].mul('1000000000000000000').div(index.principle[k]);
                     const day = (new Date(index.update[k]) - new Date('2021-04-23'))  / 86400000;
-                    code.innerText = `${val.pow(365/day).div('10000000000000000').toString()}%`
+                    code.innerText = `${val.mul(365).div(day).div('10000000000000000').toString()}%`
                 }
                 {
                     const td = document.createElement('td');
