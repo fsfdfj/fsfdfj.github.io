@@ -31,11 +31,19 @@ const index_builder_farm = (y, x) => {
     return y
 };
 
+const index_builder_update = (y, x) => {
+    y[x.value.token] = x.value.date;
+    return y
+};
+
 index.asset = data.filter(item => item.type === 'asset').reduce(index_builder_asset, {});
 index.balance = data.filter(item => ['recv', 'earn'].includes(item.type)).reduce(index_builder_balance, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = ethers.BigNumber.from('0'); return y; }, {}));
 index.principle = data.filter(item => item.type === 'recv').reduce(index_builder_principle, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = ethers.BigNumber.from('0'); return y; }, {}));
 index.interest = data.filter(item => item.type === 'earn').reduce(index_builder_interest, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = ethers.BigNumber.from('0'); return y; }, {}));
 index.farm = data.filter(item => item.type === 'earn').reduce(index_builder_farm, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = []; return y; }, {}));
+index.update = data.filter(item => item.type === 'earn').reduce(index_builder_update, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = ''; return y; }, {}));
+
+console.log(update)
 
 {
     const header = document.createElement('header')
