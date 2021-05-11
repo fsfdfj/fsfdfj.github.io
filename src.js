@@ -43,7 +43,7 @@ index.interest = data.filter(item => item.type === 'earn').reduce(index_builder_
 index.farm = data.filter(item => item.type === 'earn').reduce(index_builder_farm, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = []; return y; }, {}));
 index.update = data.filter(item => item.type === 'earn').reduce(index_builder_update, data.filter(item => item.type === 'asset').reduce((y, x) => { y[x.value.id] = ''; return y; }, {}));
 
-console.log(update)
+console.log(index.update)
 
 {
     const header = document.createElement('header')
