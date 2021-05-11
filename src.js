@@ -228,7 +228,7 @@ switch (search.get('cmd')) {
                     const code = document.createElement('code');
                     td.appendChild(code);
                     const val = index.interest[k].mul('1000000000000000000').div(index.principle[k]);
-                    const day = (new Date(index.update[k]) - new Date('2021-04-23'))  / 86400000;
+                    const day = (new Date(index.update[k]) - new Date('2021-04-20'))  / 86400000;
                     code.innerText = `${val.mul(365).div(day).div('10000000000000000').toString()}%`
                 }
                 {
